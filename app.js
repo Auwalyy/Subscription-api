@@ -12,9 +12,7 @@ import arcjetMiddlleware from './middleware/arcject.middleware.js';
 import workflowRouter from './routes/workflow.routes.js';
 
 
- dotenv.config({
-  path: '.env.development.local'   
-});
+dotenv.config(); // automatically loads .env from project root
 
 const app = express();
 
